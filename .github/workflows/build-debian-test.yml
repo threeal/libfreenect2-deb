@@ -1,9 +1,9 @@
-name: Build debian
+name: Build Debian Test
 on:
   pull_request:
     branches: [ main ]
 jobs:
-  build-debian:
+  build-debian-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout this repository

@@ -1,4 +1,4 @@
-name: Deploy debian
+name: Deploy Debian
 on:
   push:
     branches: [ main ]
