@@ -49,6 +49,6 @@ set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Alfi Maulana <alfi.maulana.f@gmail.com>")
 set(CPACK_DEBIAN_PACKAGE_HOMEPAGE "https://github.com/OpenKinect/libfreenect2")
 
 set(CPACK_DEBIAN_PACKAGE_DEPENDS
-  "libglfw3-dev libturbojpeg0-dev libusb-dev libva-dev ocl-icd-opencl-dev")
+  "libglfw3-dev libturbojpeg0-dev libusb-1.0-0-dev libva-dev ocl-icd-opencl-dev")
 
 include(CPack)
