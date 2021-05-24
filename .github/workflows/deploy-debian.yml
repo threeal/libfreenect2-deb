@@ -56,4 +56,5 @@ jobs:
           password: ${{ secrets.SSH_PASS }}
           script: |
             cd ~/repository/debian
-            reprepro includedeb stable ~/temp/stable/*.deb
+            reprepro includedeb stable ~/temp/stable/build/*.deb
+            rm -rf ~/temp/stable/build/
