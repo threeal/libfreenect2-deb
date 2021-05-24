@@ -21,7 +21,8 @@ jobs:
             libturbojpeg0-dev \
             libusb-dev \
             libva-dev \
-            ocl-icd-opencl-dev
+            ocl-icd-opencl-dev \
+            pkg-config
 
       - name: Create a build directory
         run: mkdir build
