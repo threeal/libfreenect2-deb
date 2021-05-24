@@ -1,6 +1,6 @@
 name: Deploy debian
 on:
-  pull_request:
+  push:
     branches: [ main ]
 jobs:
   deploy-debian:
@@ -44,7 +44,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASS }}
           source: "build/*.deb"
-          target: "~/temp/stable/"
+          target: "~/temp/libfreenect2-deb/"
           rm: true
 
       - name: Prepare Debian package in the server
@@ -56,5 +56,5 @@ jobs:
           password: ${{ secrets.SSH_PASS }}
           script: |
             cd ~/repository/debian
-            reprepro includedeb stable ~/temp/stable/build/*.deb
-            rm -rf ~/temp/stable/build/
+            reprepro includedeb stable ~/temp/libfreenect2-deb/build/*.deb
+            rm -rf ~/temp/libfreenect2-deb/
