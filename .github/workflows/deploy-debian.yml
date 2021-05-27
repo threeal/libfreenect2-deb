@@ -44,7 +44,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASS }}
           source: "build/*.deb"
-          target: "~/temp/libfreenect2-deb/"
+          target: "~/temp/stable/libfreenect2-deb/"
           rm: true
 
       - name: Prepare Debian package in the server
@@ -56,5 +56,5 @@ jobs:
           password: ${{ secrets.SSH_PASS }}
           script: |
             cd ~/repository/debian
-            reprepro includedeb stable ~/temp/libfreenect2-deb/build/*.deb
-            rm -rf ~/temp/libfreenect2-deb/
+            reprepro includedeb stable ~/temp/stable/libfreenect2-deb/build/*.deb
+            rm -rf ~/temp/stable/libfreenect2-deb/
