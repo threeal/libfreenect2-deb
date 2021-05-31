@@ -18,7 +18,6 @@ jobs:
             libglfw3-dev \
             libturbojpeg0-dev \
             libusb-1.0-0-dev \
-            libva-dev \
             ocl-icd-opencl-dev
 
       - name: Create a build directory
