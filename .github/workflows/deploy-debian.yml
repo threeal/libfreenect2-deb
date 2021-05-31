@@ -1,5 +1,6 @@
 name: Deploy Debian
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
 jobs:
