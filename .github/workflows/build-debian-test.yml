@@ -37,7 +37,6 @@ jobs:
         run: make package
 
       - name: Install Debian packages
-        working-directory: build
         run: sudo dpkg -i build/*.deb
 
       - name: Save results
