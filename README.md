@@ -26,7 +26,7 @@ This project is created to simplify the deployment of the library as a [Debian p
   $ mkdir build
   $ cd build
   ```
-- Configure the CMake with the following options.
+- Configure CMake with the following options.
   ```bash
   $ cmake -DCMAKE_INSTALL_PREFIX=/usr ..
   ```
@@ -35,9 +35,9 @@ This project is created to simplify the deployment of the library as a [Debian p
   $ make
   ```
   > Optionally, you could speed up the build process by specifying the parallel job using `-j` option, see [this](https://www.gnu.org/software/make/manual/html_node/Parallel.html).
-- Create the Debian package using CPack.
+- Build Debian packages.
   ```bash
-  $ cpack
+  $ make package
   ```
 
 ## License
